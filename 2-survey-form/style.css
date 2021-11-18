@@ -38,7 +38,9 @@ Medium:
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
 */
-/* * {
+/* ******************* */
+/* REUSABLE  */
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -50,7 +52,143 @@ html {
 
 body {
   font-family: "Teko", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1;
-  color: #333;
-} */
+  color: #fff;
+}
+
+/******************************/
+/*           STYLING          */
+/******************************/
+
+body {
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(181, 158, 250, 0.8),
+      rgba(181, 158, 250, 0.3)
+    ),
+    url(assets/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  margin: 4.8rem auto 0 auto;
+  max-width: 80rem;
+}
+
+#title,
+#description {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+#title {
+  font-size: 4.4rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+#description {
+  font-size: 3rem;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 2.4rem;
+  word-spacing: 2px;
+}
+
+#survey-form {
+  background-color: #845ef7;
+  padding: 4.4rem 3.2rem;
+  border-radius: 4px;
+}
+
+.image-title {
+  max-width: 20rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.4rem;
+}
+
+.form-label {
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.form-label > span {
+  font-size: 1.6rem;
+}
+
+.form-filling,
+.text-area {
+  font-family: "Teko", sans-serif;
+  color: #555;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+
+  font-size: 1.8rem;
+  min-height: 3.6rem;
+  border-radius: 4px;
+  border: none;
+  padding: 1.4rem 1.4rem 1rem 1.4rem;
+}
+
+.form-filling.dropdown {
+  background-color: #fff;
+  padding: 3px 1.4rem 0 1.4rem;
+}
+
+.dropdown option {
+  color: #555;
+}
+
+.form-check {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.form-check input {
+  transform: scale(1.5);
+  margin-right: 8px;
+}
+
+.form-check input:last-child {
+  margin-bottom: 1rem;
+}
+
+.text-area {
+  min-height: 12rem;
+  border-radius: 0;
+  margin-bottom: 2rem;
+}
+
+.form-submit {
+  font-family: "Teko", sans-serif;
+  letter-spacing: 1px;
+  font-size: 2.4rem;
+  padding: 1rem 0;
+  background-color: #fab005;
+  border: none;
+  color: #fff;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 54em) {
+  .container {
+    padding: 0 5rem;
+    margin: inherit 5rem;
+  }
+
+  html {
+    font-size: 56%;
+  }
+}
