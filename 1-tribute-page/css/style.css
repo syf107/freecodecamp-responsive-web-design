@@ -1,0 +1,200 @@
+/* 
+
+--- 01 TYPOGRAPHY SYSTEM
+- Font sizes (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights:
+- Line heights:
+- Letter spacing:
+
+
+--- 02 COLORS
+- Primary: 
+#845ef7
+  * Primary Tints: 
+  #b59efa
+
+  * Primary Shades:
+
+- Accents:
+  * Accents Tints:
+  
+  * Accents Shades:
+
+- Grey: 
+
+--- 03 SHADOWS
+
+
+
+--- 04 BORDER-RADIUS
+Default:
+Medium:
+
+
+--- 05 WHITESPACES
+- Spacing systems (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Teko", sans-serif;
+  font-weight: 300;
+  line-height: 1;
+  color: #333;
+}
+
+.grid {
+  display: grid;
+  row-gap: 6.4rem;
+  column-gap: 6.4rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#main {
+  width: 99%;
+  background-color: #b59efa;
+  margin: 0 auto;
+}
+
+#title {
+  padding-top: 4.8rem;
+  font-size: 7.4rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.title-description {
+  /* line-height: ; */
+  font-size: 3rem;
+  word-spacing: 2px;
+  letter-spacing: 1.4px;
+  text-align: center;
+  font-weight: 400;
+  /* margin-bottom: 3.2rem; */
+  color: #4c4c4c;
+}
+
+#img-div {
+  /* display: flex; */
+  background-color: #fff;
+  max-width: 120rem;
+  margin: 3.2rem auto;
+  padding: 2rem 3rem;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+#image {
+  display: block;
+  margin: 1.6rem auto;
+  max-width: 100%;
+}
+
+#img-caption {
+  font-size: 2.4rem;
+  word-spacing: 2px;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+  color: #4c4c4c;
+}
+
+#tribute-info {
+  max-width: 120rem;
+  margin: 0 auto 4.8rem auto;
+  /* border: 5px solid #e6dffd; */
+}
+
+#tribute-info > h2 {
+  font-size: 6.2rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 3.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.series-timeline {
+  margin: 0 auto;
+  padding: 0 3.2rem 0 3.2rem;
+}
+
+.series-info {
+  align-self: center;
+}
+
+.series-title {
+  font-size: 4.4rem;
+}
+
+.series-years,
+.series-volume {
+  text-align: right;
+}
+.series-years {
+  font-size: 3rem;
+}
+.series-volume {
+  font-size: 2.4rem;
+  color: #281c4a;
+  margin-bottom: 1.6rem;
+}
+
+.series-description {
+  font-size: 2.4rem;
+  word-spacing: 2px;
+  letter-spacing: 1.3px;
+  line-height: 1.25;
+  text-align: justify;
+  font-weight: 400;
+  color: #333;
+  border-bottom: 5px solid #281c4a;
+  border-top: 5px solid #281c4a;
+}
+.series-img {
+  justify-self: center;
+  max-width: 24rem;
+  transition: all 0.4s;
+}
+
+.series-img:hover {
+  transform: translateY(-1rem);
+}
+
+.series-img > img {
+  width: 100%;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.tribute-footer {
+  font-size: 3.6rem;
+  text-align: center;
+}
+
+#tribute-link:link,
+#tribute-link:active {
+  text-decoration: none;
+  color: #333;
+}
+#tribute-link:hover,
+#tribute-link:visited {
+  color: #333;
+}

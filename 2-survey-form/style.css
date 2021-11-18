@@ -1,0 +1,56 @@
+/* 
+
+--- 01 TYPOGRAPHY SYSTEM
+- Font sizes (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights:
+- Line heights:
+- Letter spacing:
+
+
+--- 02 COLORS
+- Primary: 
+#845ef7
+  * Primary Tints: 
+  #b59efa
+
+  * Primary Shades:
+
+- Accents:
+  * Accents Tints:
+  
+  * Accents Shades:
+
+- Grey: 
+
+--- 03 SHADOWS
+
+
+
+--- 04 BORDER-RADIUS
+Default:
+Medium:
+
+
+--- 05 WHITESPACES
+- Spacing systems (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Teko", sans-serif;
+  font-weight: 300;
+  line-height: 1;
+  color: #333;
+} */
