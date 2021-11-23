@@ -5,37 +5,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600&family=Zen+Antique+Soft&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header id="header">
-      <img src="" alt="" />
+    <header class="sticky header" id="header">
+      <div class="header-logo">
+        <img src="assets/cupid-bow.png" alt="bow and arrow logo" />
+        <p>Bow & Arrow</p>
+      </div>
       <!-- User Story #13: The navbar should always be at the top of the viewport.
  -->
-      <nav>
-        <ul>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">How It Works</a></li>
-          <li><a href="#">Pricing</a></li>
+      <nav id="nav-bar">
+        <ul class="navigation">
+          <li><a class="navbar-link" href="#">Home</a></li>
+          <li><a class="navbar-link" href="#">Features</a></li>
+          <li><a class="navbar-link" href="#">How It Works</a></li>
+          <li><a class="navbar-link" href="#">Pricing</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input
-          name="email"
-          type="email"
-          placeholder="Enter your email address"
-          required
-        />
-        <input type="submit" value="Let's join" />
-      </form>
+      <section class="lp-home">
+        <h2>Awaken your Stand Power!</h2>
+        <img src="assets/bow-and-arrow.png" alt="Bow and Arrow picture" />
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            name="email"
+            type="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <input type="submit" value="Let's join" />
+        </form>
+      </section>
+      <section class="lp-feature">
+        <h1>Features</h1>
+        <div class="feature-list">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="feature-pic"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+            />
+            <div class="feature-text">
+              <h3 class="feature-text--title">Unique and Artistic Artifact</h3>
+              <p class="feature-text--detail">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam minus recusandae itaque ut architecto nisi facere
+                delectus vitae. Sunt corporis nam, tempora cumque harum optio
+                voluptatibus magni iste sint! Voluptates?
+              </p>
+            </div>
+          </svg>
+        </div>
+        <div class="feature-list">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="feature-pic"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+            />
+            <div class="feature-text">
+              <h3 class="feature-text--title">Unique and Artistic Artifact</h3>
+              <p class="feature-text--detail">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Possimus, iste porro? Totam illum, necessitatibus similique
+                reprehenderit, rem fugiat illo voluptatem eos porro, optio sed!
+                Facilis ullam temporibus tempora dignissimos quas.
+              </p>
+            </div>
+          </svg>
+        </div>
+        <div class="feature-list">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="feature-pic"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+            />
+            <div class="feature-text">
+              <h3 class="feature-text--title">Unique and Artistic Artifact</h3>
+              <p class="feature-text--detail">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                dolorem, repellat modi qui necessitatibus autem, vero officia
+                dolore quaerat commodi, quos voluptatem doloremque perspiciatis
+                asperiores omnis porro id? Illum, rerum?
+              </p>
+            </div>
+          </svg>
+        </div>
+      </section>
       <section></section>
-      <section></section>
-      <section>
+      <section class="lp-how-it-works">
+        <h1>How It Works</h1>
         <iframe
-          id="width"
-          ="560"
+          id="video"
+          width="560"
           height="315"
           src="https://www.youtube.com/embed/v0KPUHPiodw"
           title="YouTube video player"
@@ -43,9 +136,47 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
-        <div></div>
+      </section>
+      <section class="lp-pricing">
+        <div class="pricing-box">
+          <h3 class="pricing-title">Bow</h3>
+          <p class="pricing-price">$5000</p>
+          <ul>
+            <li class="pricing-feature">Lorem ipsum sum sum sum</li>
+            <li class="pricing-feature">Lorem ipsum sum sum sum</li>
+            <li class="pricing-feature">Lorem ipsum sum sum sum</li>
+            <li class="pricing-feature">Lorem ipsum sum sum sum</li>
+          </ul>
+        </div>
+        <div class="pricing-box">
+          <h3 class="pricing-title">Bow</h3>
+          <p class="pricing-price">$5000</p>
+          <ul>
+            <li class="pricing-feature">Lorem ipsum sum sum sum</li>
+            <li class="pricing-feature">Lorem ipsum sum sum sum</li>
+            <li class="pricing-feature">Lorem ipsum sum sum sum</li>
+            <li class="pricing-feature">Lorem ipsum sum sum sum</li>
+          </ul>
+        </div>
+        <div class="pricing-box">
+          <h3 class="pricing-title">Bow</h3>
+          <p class="pricing-price">$5000</p>
+          <ul>
+            <li class="pricing-feature">Lorem ipsum sum sum sum</li>
+            <li class="pricing-feature">Lorem ipsum sum sum sum</li>
+            <li class="pricing-feature">Lorem ipsum sum sum sum</li>
+            <li class="pricing-feature">Lorem ipsum sum sum sum</li>
+          </ul>
+        </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <p>Copyright 3005, Jojo Bizarre Adventure</p>
+    </footer>
   </body>
 </html>
