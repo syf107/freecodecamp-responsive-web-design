@@ -61,6 +61,11 @@ body {
   background-color: #b59efa;
 }
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 /* ******************* */
 /*       HEADER      */
 /* ******************* */
@@ -68,10 +73,10 @@ body {
 .header {
   position: relative;
   width: 100%;
-  background-color: red;
+  background-color: #845ef7;
   display: flex;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 4.8rem;
   height: 5rem;
   justify-content: space-between;
 }
@@ -102,7 +107,7 @@ body {
 }
 
 #nav-bar {
-  width: 40%;
+  width: 30%;
   margin-right: 0;
   /* padding: 0 2rem; */
 }
@@ -111,7 +116,7 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .navbar-link:link,
@@ -124,7 +129,7 @@ body {
 
 .navbar-link:active,
 .navbar-link:hover {
-  color: #333;
+  color: rgb(121, 107, 107);
 }
 
 /* User Story #13: The navbar should always be at the top of the viewport. */
@@ -133,6 +138,58 @@ body {
 
 /* User Story #15: My product landing page should utilize CSS flexbox at least once.
  */
+
+/* ******************* */
+/*  LANDING PAGE HOME  */
+/* ******************* */
+
+.lp-home {
+  margin: 8rem;
+}
+
+.lp-home-title {
+  font-size: 7.4rem;
+  /* background-color: black; */
+  color: #111;
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+.lp-home-img {
+  max-width: 20rem;
+  display: block;
+  margin: 0 auto 1.6rem auto;
+}
+
+#form {
+  /* max-width: 20rem; */
+  width: 40%;
+  margin: 0 auto;
+}
+
+.form-email,
+.form-button {
+  width: 100%;
+  font-family: "Teko", sans-serif;
+  display: block;
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+  padding: 0.5rem 1rem;
+}
+
+.form-email {
+  max-width: 24rem;
+  margin: 0 auto 1.6rem auto;
+}
+
+.form-button {
+  max-width: 16rem;
+  height: 4rem;
+  background-color: #fab005;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+}
 
 .feature-pic {
   color: red;

@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="sticky header" id="header">
+    <header class="sticky header container" id="header">
       <div class="header-logo">
         <img src="assets/cupid-bow.png" alt="bow and arrow logo" />
         <p>Bow & Arrow</p>
@@ -32,17 +32,22 @@
       </nav>
     </header>
     <main>
-      <section class="lp-home">
-        <h2>Awaken your Stand Power!</h2>
-        <img src="assets/bow-and-arrow.png" alt="Bow and Arrow picture" />
+      <section class="lp-home container">
+        <h2 class="lp-home-title">Awaken your Stand Power!</h2>
+        <img
+          class="lp-home-img"
+          src="assets/bow-and-arrow.png"
+          alt="Bow and Arrow picture"
+        />
         <form id="form" action="https://www.freecodecamp.com/email-submit">
           <input
+            class="form-email"
             name="email"
             type="email"
             placeholder="Enter your email address"
             required
           />
-          <input type="submit" value="Let's join" />
+          <input class="form-button" type="submit" value="Let's join us now!" />
         </form>
       </section>
       <section class="lp-feature">
