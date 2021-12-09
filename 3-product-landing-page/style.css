@@ -66,6 +66,23 @@ body {
   margin: 0 auto;
 }
 
+.primary-heading,
+.secondary-heading {
+  text-align: center;
+}
+
+.primary-heading {
+  font-size: 7.4rem;
+  color: #111;
+  margin-bottom: 2.4rem;
+}
+
+.secondary-heading {
+  font-size: 6.2rem;
+  color: #222;
+  margin-bottom: 2.4rem;
+}
+
 /* ******************* */
 /*       HEADER      */
 /* ******************* */
@@ -77,7 +94,7 @@ body {
   display: flex;
   margin: 0 auto;
   padding: 0 4.8rem;
-  height: 5rem;
+  height: 6.5rem;
   justify-content: space-between;
 }
 
@@ -85,6 +102,7 @@ body {
   position: fixed;
   top: 0;
   bottom: 0;
+  z-index: 999;
 }
 
 .header-logo {
@@ -95,7 +113,7 @@ body {
 
 .header-logo > p {
   font-family: "Zen Antique Soft", serif;
-  font-size: 3.6rem;
+  font-size: 3rem;
   word-spacing: -5px;
   vertical-align: top;
 }
@@ -144,15 +162,8 @@ body {
 /* ******************* */
 
 .lp-home {
-  margin: 8rem;
-}
-
-.lp-home-title {
-  font-size: 7.4rem;
-  /* background-color: black; */
-  color: #111;
-  text-align: center;
-  margin-bottom: 1.6rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 .lp-home-img {
@@ -191,8 +202,49 @@ body {
   cursor: pointer;
 }
 
+/* ******************* */
+/*  FEATURES  */
+/* ******************* */
+
+.lp-feature {
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
+  width: 70%;
+  margin: 0 auto 10rem auto;
+  /* border: 10px solid black; */
+  padding: 2.4rem 4.8rem;
+}
+
+.feature-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
 .feature-pic {
-  color: red;
-  height: 30px;
-  width: 30px;
+  flex-shrink: 0;
+  color: #fab005;
+  width: 5rem;
+  height: 5rem;
+  padding: 2rem;
+  border-radius: 50%;
+  background-color: lemonchiffon;
+  border: 0.5px solid rgba(0, 0, 0, 0.568);
+}
+
+.feature-text--title {
+  font-size: 3.6rem;
+  padding-bottom: 1rem;
+}
+
+.feature-text--detail {
+  font-size: 2.4rem;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  word-spacing: 2px;
 }

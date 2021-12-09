@@ -24,16 +24,16 @@
  -->
       <nav id="nav-bar">
         <ul class="navigation">
-          <li><a class="navbar-link" href="#">Home</a></li>
-          <li><a class="navbar-link" href="#">Features</a></li>
+          <li><a class="navbar-link" href="#home">Home</a></li>
+          <li><a class="navbar-link" href="#feature">Features</a></li>
           <li><a class="navbar-link" href="#">How It Works</a></li>
           <li><a class="navbar-link" href="#">Pricing</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="lp-home container">
-        <h2 class="lp-home-title">Awaken your Stand Power!</h2>
+      <section  class="lp-home container">
+        <h2  class="primary-heading">Awaken your Stand Power!</h2>
         <img
           class="lp-home-img"
           src="assets/bow-and-arrow.png"
@@ -50,87 +50,46 @@
           <input class="form-button" type="submit" value="Let's join us now!" />
         </form>
       </section>
-      <section class="lp-feature">
-        <h1>Features</h1>
-        <div class="feature-list">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="feature-pic"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
-            />
+      <section  class="lp-feature container">
+        <h1 class="secondary-heading">Features</h1>
+        <div class="features">
+          <div class="feature-list">
+            <ion-icon class="feature-pic" name="accessibility"></ion-icon>
+
+            <div class="feature-text">
+              <h3 class="feature-text--title">One Body One Unique Stand Power!</h3>
+              <p class="feature-text--detail">
+                Stand is the visual manifestation of life energy. Each body has different stand which generates its own unique power. Find your unique power only here.
+              </p>
+            </div>
+          </div>
+          <div class="feature-list">
+            <ion-icon class="feature-pic" name="sparkles"></ion-icon>
+
             <div class="feature-text">
               <h3 class="feature-text--title">Unique and Artistic Artifact</h3>
               <p class="feature-text--detail">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quibusdam minus recusandae itaque ut architecto nisi facere
-                delectus vitae. Sunt corporis nam, tempora cumque harum optio
-                voluptatibus magni iste sint! Voluptates?
+                Beside giving the power to its user, these bow and arrow have a
+                unique form and artistic. Each details will give you the
+                impression that it has sacred power artifact.
               </p>
             </div>
-          </svg>
-        </div>
-        <div class="feature-list">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="feature-pic"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
-            />
+          </div>
+          <div class="feature-list">
+            <ion-icon class="feature-pic" name="diamond"></ion-icon>
             <div class="feature-text">
-              <h3 class="feature-text--title">Unique and Artistic Artifact</h3>
+              <h3 class="feature-text--title">Invaluable Assets</h3>
               <p class="feature-text--detail">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Possimus, iste porro? Totam illum, necessitatibus similique
-                reprehenderit, rem fugiat illo voluptatem eos porro, optio sed!
-                Facilis ullam temporibus tempora dignissimos quas.
-              </p>
+By using these bow and arrow, you can get power by yourself ang give it to your friends or subordinates. Unleash the each unique and great power to conquer the world.</p>
             </div>
-          </svg>
-        </div>
-        <div class="feature-list">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="feature-pic"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
-            />
-            <div class="feature-text">
-              <h3 class="feature-text--title">Unique and Artistic Artifact</h3>
-              <p class="feature-text--detail">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-                dolorem, repellat modi qui necessitatibus autem, vero officia
-                dolore quaerat commodi, quos voluptatem doloremque perspiciatis
-                asperiores omnis porro id? Illum, rerum?
-              </p>
-            </div>
-          </svg>
+          </div>
+
+          
+          </div>
         </div>
       </section>
-      <section></section>
-      <section class="lp-how-it-works">
-        <h1>How It Works</h1>
+      <section class="container lp-how-it-works">
+        <h1 class="secondary-heading">How It Works</h1>
         <iframe
           id="video"
           width="560"
@@ -183,5 +142,14 @@
       </ul>
       <p>Copyright 3005, Jojo Bizarre Adventure</p>
     </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
