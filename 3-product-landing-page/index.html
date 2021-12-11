@@ -17,22 +17,22 @@
   <body>
     <header class="sticky header container" id="header">
       <div class="header-logo">
-        <img src="assets/cupid-bow.png" alt="bow and arrow logo" />
+        <img id="header-img" src="assets/cupid-bow.png" alt="bow and arrow logo" />
         <p>Bow & Arrow</p>
       </div>
       <!-- User Story #13: The navbar should always be at the top of the viewport.
  -->
       <nav id="nav-bar">
         <ul class="navigation">
-          <li><a class="navbar-link" href="#home">Home</a></li>
-          <li><a class="navbar-link" href="#feature">Features</a></li>
-          <li><a class="navbar-link" href="#">How It Works</a></li>
-          <li><a class="navbar-link" href="#">Pricing</a></li>
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#feature">Features</a></li>
+          <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section  class="lp-home container">
+      <section id="home" class="lp-home container">
         <h2  class="primary-heading">Awaken your Stand Power!</h2>
         <img
           class="lp-home-img"
@@ -42,15 +42,16 @@
         <form id="form" action="https://www.freecodecamp.com/email-submit">
           <input
             class="form-email"
+            id="email"
             name="email"
             type="email"
             placeholder="Enter your email address"
             required
           />
-          <input class="form-button" type="submit" value="Let's join us now!" />
+          <input id="submit" class="form-button" type="submit" value="Let's join us now!" />
         </form>
       </section>
-      <section  class="lp-feature container">
+      <section id="feature"  class="lp-feature container">
         <h1 class="secondary-heading">Features</h1>
         <div class="features">
           <div class="feature-list">
@@ -80,7 +81,7 @@
             <div class="feature-text">
               <h3 class="feature-text--title">Invaluable Assets</h3>
               <p class="feature-text--detail">
-By using these bow and arrow, you can get power by yourself ang give it to your friends or subordinates. Unleash the each unique and great power to conquer the world.</p>
+                By using these bow and arrow, you can get power by yourself ang give it to your friends or subordinates. Unleash the each unique and great power to conquer the world.</p>
             </div>
           </div>
 
@@ -88,12 +89,11 @@ By using these bow and arrow, you can get power by yourself ang give it to your 
           </div>
         </div>
       </section>
-      <section class="container lp-how-it-works">
+      <section id="how-it-works" class="container lp-how-it-works">
         <h1 class="secondary-heading">How It Works</h1>
         <iframe
-          id="video"
-          width="560"
-          height="315"
+        id="video"
+          class="how-it-works--video"
           src="https://www.youtube.com/embed/v0KPUHPiodw"
           title="YouTube video player"
           frameborder="0"
@@ -101,46 +101,62 @@ By using these bow and arrow, you can get power by yourself ang give it to your 
           allowfullscreen
         ></iframe>
       </section>
-      <section class="lp-pricing">
-        <div class="pricing-box">
-          <h3 class="pricing-title">Bow</h3>
-          <p class="pricing-price">$5000</p>
-          <ul>
-            <li class="pricing-feature">Lorem ipsum sum sum sum</li>
-            <li class="pricing-feature">Lorem ipsum sum sum sum</li>
-            <li class="pricing-feature">Lorem ipsum sum sum sum</li>
-            <li class="pricing-feature">Lorem ipsum sum sum sum</li>
-          </ul>
-        </div>
-        <div class="pricing-box">
-          <h3 class="pricing-title">Bow</h3>
-          <p class="pricing-price">$5000</p>
-          <ul>
-            <li class="pricing-feature">Lorem ipsum sum sum sum</li>
-            <li class="pricing-feature">Lorem ipsum sum sum sum</li>
-            <li class="pricing-feature">Lorem ipsum sum sum sum</li>
-            <li class="pricing-feature">Lorem ipsum sum sum sum</li>
-          </ul>
-        </div>
-        <div class="pricing-box">
-          <h3 class="pricing-title">Bow</h3>
-          <p class="pricing-price">$5000</p>
-          <ul>
-            <li class="pricing-feature">Lorem ipsum sum sum sum</li>
-            <li class="pricing-feature">Lorem ipsum sum sum sum</li>
-            <li class="pricing-feature">Lorem ipsum sum sum sum</li>
-            <li class="pricing-feature">Lorem ipsum sum sum sum</li>
-          </ul>
+      <section id="pricing" class="lp-pricing container">
+        <h2 class="secondary-heading">Pricing</h2>
+        <div class="pricing">
+          <div class="pricing-box">
+            <div class="pricing-title">
+              <h3>Bow & Arrow</h3>
+              </div>
+            <p class="pricing-price">$1000</p>
+            <ul class="pricing-feature">
+              <li class="pricing-feature--list">Lorem ipsum sum sum sum</li>
+              <li class="pricing-feature--list">Lorem ipsum sum sum sum</li>
+              <li class="pricing-feature--list">Lorem ipsum sum sum sum</li>
+              <li class="pricing-feature--list">Lorem ipsum sum sum sum</li>
+            </ul>
+            <input type="submit" class="pricing-submit" value="I want this!">
+          </div>
+          <div class="pricing-box">
+            <div class="pricing-title">
+              <h3>Bow & Arrow</h3>
+  
+              </div>
+            <p class="pricing-price">$2000</p>
+            <ul class="pricing-feature">
+              <li class="pricing-feature--list">Lorem ipsum sum sum sum</li>
+              <li class="pricing-feature--list">Lorem ipsum sum sum sum</li>
+              <li class="pricing-feature--list">Lorem ipsum sum sum sum</li>
+              <li class="pricing-feature--list">Lorem ipsum sum sum sum</li>
+            </ul>
+            <input type="submit" class="pricing-submit" value="I want this!">
+
+          </div>
+          <div class="pricing-box">
+            <div class="pricing-title">
+            <h3>Bow & Arrow</h3>
+
+            </div>
+            <p class="pricing-price">$2500</p>
+            <ul class="pricing-feature">
+              <li class="pricing-feature--list">Lorem ipsum sum sum sum</li>
+              <li class="pricing-feature--list">Lorem ipsum sum sum sum</li>
+              <li class="pricing-feature--list">Lorem ipsum sum sum sum</li>
+              <li class="pricing-feature--list">Lorem ipsum sum sum sum</li>
+            </ul>
+            <input type="submit" class="pricing-submit" value="I want this!">
+
+          </div>
         </div>
       </section>
     </main>
-    <footer>
-      <ul>
+    <footer class="container">
+      <ul class="sitemap">
         <li><a href="#">Privacy</a></li>
         <li><a href="#">Terms</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-      <p>Copyright 3005, Jojo Bizarre Adventure</p>
+      <p class="copyright">Copyright 3005, Jojo Bizarre Adventure</p>
     </footer>
 
     <script
